@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+    
+    body{
+        width: 100%;
+        height: 100;
+        background-color: #1F67DC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .find-friends-container{
+        width: 400px;
+        height: 70vh;
+        box-shadow: 5px 5px 20px #0C44A4;
+    }
+    
+    
+    .find-friends-header{
+        background: rgb(12,68,164);
+        background: linear-gradient(90deg,rgba(12,68,164,1) 0%, rgba(31,103,220,1,) 100%);
+    }
+    
+    .find-friends-header .heading{
+        color: #F1F1F1;
+        font-size: 18px;
+        font-weight: 100;
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+    
+    }
+    
+    .find-friends-header .search img{
+        position: absolute;
+        width: 20px;
+        top: 15px;
+        left: 40px;
+    }
+    
+    .find-friends-header .search{
+        position: relative;
+    
+    }
+    
+    .find-friends-header .search input{
+        border: 0;
+    outline: none;
+    margin: 0 25px 25px;
+    width: calc(100%-150px);
+    font-size: 16px;
+    color: #D0E7F8;
+    background-color: rgba(255,255,255,);
+    padding: 15px 50px;
+    border-radius: 40px;
+    }
+    
+    
+    .find-friends-header .search input::placeholder{
+        color:  rgba(255,255,255,0.8);
+        
+    }
+    
+    .find-friends-body{
+        background-color: #D0E7F8;
+    }
+    
+    .user-row{
+        padding: 15px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .user-info{
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    
+    .user-info img{
+        width: 70px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    .user-info span{
+        color: #0C44A4;
+        font-weight: bold;
+    }
+    
+    .action-follow{
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        color: #FFF;
+        height: 40px;
+        width: 100px;
+        box-shadow:2px 2px 10px rgba(12,68,164,0.5);
+        font-weight: bold;
+        background: rgb(12,68,164);
+        background: linear-gradient(90deg,rgba(12,68,164,1) 0%, rgba(31,103,220,1,) 100%);
+    }
+</style>
+</head>
+<body>
+    <div class="find-friends-container">
+        <div class="find-friends-header">
+            <div class="heading">find friends </div>
+            <div class="search">
+                <img src="images/search.png" alt="search">
+                <input type="text" placeholder="friends name">
+            </div>
+        </div>
+        <div class="find-friends-body">
+            <div class="user-row">
+                <div class="user-info">
+                    <img src="images/member-2.png" alt="user">
+                    <span>ujjwal shivhare</span>
+                </div>
+                <button class="action-follow">
+                    Follow
+                </button>
+            </div>
+
+            <div class="user-row">
+                <div class="user-info">
+                    <img src="images/member-1.png" alt="user">
+                    <span>jiya</span>
+                </div>
+                <button class="action-follow">
+                    Follow
+                </button>
+            </div>
+
+            <div class="user-row">
+                <div class="user-info">
+                    <img src="images/member-3.png" alt="user">
+                    <span>khushi</span>
+                </div>
+                <button class="action-follow">
+                    Unfollow
+                </button>
+            </div>
+
+            <div class="user-row">
+                <div class="user-info">
+                    <img src="images/member-4.png" alt="user">
+                    <span>mark</span>
+                </div>
+                <button class="action-follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
